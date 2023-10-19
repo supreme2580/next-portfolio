@@ -19,7 +19,9 @@ export const HomeSection = ({ views }: HomeProps) => {
         height={200}
         className="self-center rounded-full"
       />
-      <div className="pb-4 pt-8 sm:pt-4 text-3xl">hi, I'm Luis 👋</div>
+      <div className="pb-4 pt-8 sm:pt-10 text-3xl">
+        hi, I'm Luis <span className="wave ml-1">👋</span>
+      </div>
       <div className="text-justify text-lg tracking-tight mb-12">
         I am a fresh graduate from{" "}
         <span className="text-[#031090]">the Ateneo de Manila University</span>{" "}
