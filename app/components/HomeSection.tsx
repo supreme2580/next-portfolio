@@ -11,8 +11,10 @@ export const HomeSection = () => {
       id="home"
     >
       <Image
+        priority={true}
         src={profile}
         alt="profile"
+        placeholder="blur"
         width={200}
         height={200}
         className="self-center rounded-full"
