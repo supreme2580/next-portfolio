@@ -1,7 +1,7 @@
 import React from "react";
 import tslogo from "@/public/tslogo-resized.svg";
 import tailwindlogo from "@/public/tailwindlogo-resized.svg";
-
+import Link from "next/link";
 import Image from "next/image";
 
 export const AboutSection = () => {
@@ -12,13 +12,13 @@ export const AboutSection = () => {
     >
       <div className="pb-4 pt-8 sm:pt-4 text-3xl">About me!</div>
       <div className="text-justify text-lg tracking-tight mb-4">
-        I've been into tech at a very young age but I only started enjoying
+        I&apos;ve been into tech at a very young age but I only started enjoying
         working on tech when I created my first CRUD app marking the beginning
         of my exciting journey into software development.
       </div>
       <div className="text-justify text-lg tracking-tight mb-4">
         I am mainly interested in developing{" "}
-        <a
+        <Link
           href="https://react.dev"
           target="_blank"
           className="border border-neutral-200  bg-neutral-50  rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900  no-underline"
@@ -41,9 +41,9 @@ export const AboutSection = () => {
             ></path>
           </svg>
           React
-        </a>{" "}
+        </Link>{" "}
         applications and I am currently using{" "}
-        <a
+        <Link
           href="https://nextjs.org"
           target="_blank"
           className="border border-neutral-200  bg-neutral-50  rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900  no-underline"
@@ -112,9 +112,9 @@ export const AboutSection = () => {
             </defs>
           </svg>
           Next.js
-        </a>{" "}
+        </Link>{" "}
         and{" "}
-        <a
+        <Link
           href="https://www.typescriptlang.org/"
           target="_blank"
           className="border border-neutral-200  bg-neutral-50  rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900  no-underline"
@@ -127,9 +127,9 @@ export const AboutSection = () => {
             className="inline-flex mr-1"
           />
           Typescript
-        </a>{" "}
+        </Link>{" "}
         in my projects (and have had an enjoyable experience thus far).{" "}
-        <a
+        <Link
           href="https://tailwindcss.com/"
           target="_blank"
           className="border border-neutral-200  bg-neutral-50  rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900  no-underline"
@@ -142,19 +142,21 @@ export const AboutSection = () => {
             className="inline-flex mr-1"
           />
           Tailwind
-        </a>{" "}
+        </Link>{" "}
         is my go-to styling solution and I use{" "}
-        <a
+        <Link
           href="https://ui.shadcn.com/"
           target="_blank"
           className="border border-neutral-200  bg-neutral-50  rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900  no-underline"
         >
           shadcn/ui
-        </a>{" "}
+        </Link>{" "}
         from time to time.
       </div>
-
-      {/* <div>Website Visitors: {views}</div> */}
+      <div className="text-justify text-lg tracking-tight mb-4">
+        When I&apos;m not infront of a screen, I enjoy cooking, baking and the
+        occasional workout. I also enjoy watching and playing Dota 2.
+      </div>
     </section>
   );
 };

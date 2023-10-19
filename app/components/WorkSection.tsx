@@ -1,13 +1,21 @@
 import { ArrowUpRight } from "lucide-react";
-import React from "react";
+import Link from "next/link";
 
 export const WorkSection = () => {
   return (
     <section
-      className="min-h-screen flex flex-col justify-center align-middle gap-4"
+      className="min-h-screen flex flex-col justify-center align-middle sm:gap-6 gap-16"
       id="work"
     >
-      <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl">Experience</div>
+      <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Experience</div>
+      <PlaceWorked
+        link="https://theguidon.com/1112/main/"
+        date="2022 ─ PRESENT"
+        position="Digital Development Staffer"
+        company="The Guidon"
+        description="Create interactive elements for the publication's articles, enhancing the online reading experience."
+        technologies={["React", "Vite", "TailwindCSS"]}
+      />
       <PlaceWorked
         link="https://thinkingmachin.es/"
         date="Jun 2023 ─ Aug 2023"
@@ -66,27 +74,30 @@ const PlaceWorked = ({
   technologies: string[];
 }) => {
   return (
-    <a
+    <Link
       href={link}
       target="_blank"
-      className="text-lg tracking-tight mb-4 flex sm:flex-row flex-col sm:p-4 sm:hover:shadow-xl rounded-xl relative group transition-colors duration-300 ease-in-out sm:hover:bg-primary sm:hover:text-background"
+      className="text-lg tracking-tight mb-4 flex sm:flex-row flex-col sm:p-6 sm:hover:shadow-xl rounded-xl relative group transition-colors duration-300 ease-in-out sm:hover:bg-primary sm:hover:text-background"
     >
       <ArrowUpRight
         size={18}
         className="absolute top-0 right-0 sm:mt-4 mt-2 sm:mr-4 mr-2 bg-secondary sm:group-hover:bg-primary sm:group-hover:text-secondary rounded"
       />
-      <div className="sm:w-1/3 text-sm text-accent text-left">{date}</div>
-      <div className="text-xl sm:ml-5">
+      <div className="sm:w-1/4 text-sm text-accent text-left">{date}</div>
+      <div className="sm:w-3/4 text-xl sm:ml-5">
         {position} • {company}
         <div className="text-[15px] py-2">{description}</div>
         <div className="flex flex-wrap gap-2 mt-2">
-          {technologies.map((tech) => (
-            <div className="sm:group-hover:bg-secondary sm:group-hover:text-primary bg-primary text-secondary px-3 py-1 rounded-2xl text-[12px]">
+          {technologies.map((tech, index) => (
+            <div
+              key={"work" + index}
+              className="sm:group-hover:bg-secondary sm:group-hover:text-primary bg-primary text-secondary px-3 py-1 rounded-2xl text-[12px]"
+            >
               {tech}
             </div>
           ))}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };

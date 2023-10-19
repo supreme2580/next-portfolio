@@ -58,16 +58,16 @@ function AppIcon({
       }}
     >
       {sectionId === "home" ? (
-        <Home strokeWidth={0.8} height={width} width={width} />
+        <Home strokeWidth={0.8} className="w-full h-full" />
       ) : null}
       {sectionId === "about" ? (
-        <UserCircle2 strokeWidth={0.8} height={width} width={width} />
+        <UserCircle2 className="w-full h-full" strokeWidth={0.8} />
       ) : null}
       {sectionId === "work" ? (
-        <Briefcase strokeWidth={0.8} height={width} width={width} />
+        <Briefcase strokeWidth={0.8} className="w-full h-full" />
       ) : null}
       {sectionId === "projects" ? (
-        <FolderGit2 strokeWidth={0.8} height={width} width={width} />
+        <FolderGit2 strokeWidth={0.8} className="w-full h-full" />
       ) : null}
     </motion.div>
   );
