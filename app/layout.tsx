@@ -48,11 +48,6 @@ export default function RootLayout({
           content="Welcome to my portfolio! Discover a collection of my  web and game development projects."
         />
         <meta property="twitter:title" content="Jose Luis Bautista" />
-        <meta property="og:image" content="https://www.luisbau.me/api/og" />
-        <meta
-          property="twitter:image"
-          content="https://www.luisbau.me/api/og"
-        />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:title" content="Jose Luis Bautista" />
       </head>
