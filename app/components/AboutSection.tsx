@@ -7,10 +7,10 @@ import Image from "next/image";
 export const AboutSection = () => {
   return (
     <section
-      className="min-h-screen flex flex-col justify-center align-middle"
+      className="sm:pl-4 flex flex-col justify-center align-middle mb-24"
       id="about"
     >
-      <div className="pb-4 pt-8 sm:pt-4 text-3xl">About me!</div>
+      <div className="pb-4 pt-8 sm:pt-4  text-3xl">About me!</div>
       <div className="text-justify text-lg tracking-tight mb-4">
         I&apos;ve been into tech at a very young age but I only started enjoying
         working on tech when I created my first CRUD app marking the beginning

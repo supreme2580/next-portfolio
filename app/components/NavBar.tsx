@@ -59,23 +59,31 @@ function AppIcon({
       }}
     >
       {sectionId === "home" ? (
-        <Home id={"homenav"} strokeWidth={0.8} className="w-full h-full" />
+        <Home
+          id={"homenav"}
+          strokeWidth={0.8}
+          className="w-full h-full noSelect cursor-pointer"
+        />
       ) : null}
       {sectionId === "about" ? (
         <UserCircle2
           id={"aboutnav"}
-          className="w-full h-full"
+          className="w-full h-full noSelect cursor-pointer"
           strokeWidth={0.8}
         />
       ) : null}
       {sectionId === "work" ? (
-        <Briefcase id={"worknav"} strokeWidth={0.8} className="w-full h-full" />
+        <Briefcase
+          id={"worknav"}
+          strokeWidth={0.8}
+          className="w-full h-full noSelect cursor-pointer"
+        />
       ) : null}
       {sectionId === "projects" ? (
         <FolderGit2
           id={"projectsnav"}
           strokeWidth={0.8}
-          className="w-full h-full"
+          className="w-full h-full noSelect cursor-pointer"
         />
       ) : null}
       <Tooltip

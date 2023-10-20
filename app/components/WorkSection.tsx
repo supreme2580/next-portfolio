@@ -4,7 +4,7 @@ import Link from "next/link";
 export const WorkSection = () => {
   return (
     <section
-      className="min-h-screen flex flex-col justify-center align-middle sm:gap-6 gap-16"
+      className=" flex flex-col justify-center align-middle sm:gap-6 gap-16"
       id="work"
     >
       <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Experience</div>
