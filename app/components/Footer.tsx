@@ -8,14 +8,14 @@ export const Footer = ({ views }: any) => {
         <Link
           target="_blank"
           href="https://leerob.io/"
-          className="text-secondary font-bold"
+          className="text-accent font-bold"
         >
           leerob.io
         </Link>{" "}
         and{" "}
         <Link
           target="_blank"
-          className="text-secondary font-bold"
+          className="text-accent font-bold"
           href="https://brittanychiang.com/"
         >
           brittanychiang.com

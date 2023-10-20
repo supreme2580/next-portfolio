@@ -9,6 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useRef } from "react";
+import { Tooltip } from "react-tooltip";
 
 export default function NavBar() {
   let mouseX = useMotionValue(Infinity);
@@ -58,17 +59,34 @@ function AppIcon({
       }}
     >
       {sectionId === "home" ? (
-        <Home strokeWidth={0.8} className="w-full h-full" />
+        <Home id={"homenav"} strokeWidth={0.8} className="w-full h-full" />
       ) : null}
       {sectionId === "about" ? (
-        <UserCircle2 className="w-full h-full" strokeWidth={0.8} />
+        <UserCircle2
+          id={"aboutnav"}
+          className="w-full h-full"
+          strokeWidth={0.8}
+        />
       ) : null}
       {sectionId === "work" ? (
-        <Briefcase strokeWidth={0.8} className="w-full h-full" />
+        <Briefcase id={"worknav"} strokeWidth={0.8} className="w-full h-full" />
       ) : null}
       {sectionId === "projects" ? (
-        <FolderGit2 strokeWidth={0.8} className="w-full h-full" />
+        <FolderGit2
+          id={"projectsnav"}
+          strokeWidth={0.8}
+          className="w-full h-full"
+        />
       ) : null}
+      <Tooltip
+        id={sectionId}
+        place="top"
+        noArrow={true}
+        anchorSelect={`#${sectionId}nav`}
+        className="bg-primary text-secondary rounded-lg p-2"
+      >
+        {sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}
+      </Tooltip>
     </motion.div>
   );
 }
