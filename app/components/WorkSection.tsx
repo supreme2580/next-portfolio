@@ -1,53 +1,6 @@
+import { placesWorkedData } from "@/constants/constants";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-
-export const WorkSection = () => {
-  return (
-    <section
-      className=" flex flex-col justify-center align-middle sm:gap-6 gap-16"
-      id="work"
-    >
-      <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Experience</div>
-      <PlaceWorked
-        link="https://www.daobox.app/"
-        date="2023 ─ PRESENT"
-        position="Frontend Developer"
-        company="Daobox"
-        description="We are a development studio working at the intersection of blockchain and artificial intelligence. Our objective is to ensure that DAOs are within the reach of all communities, fostering a governance framework that is transparent and inclusive for individuals and organizations alike."
-        technologies={["React", "NextJS", "TailwindCSS", "Typescript", "Wagmi", "Cypress"]}
-      />
-      <PlaceWorked
-        link="https://www.bankless.community/"
-        date="2021 ─ PRESENT"
-        position="Software Developer"
-        company="Bankless Dao"
-        description="A decentralized autonomous organization that acts as a steward of the Bankless Movement progressing the world towards a future of greater freedom."
-        technologies={[
-          "React",
-          "Typescript",
-          "NextJS",
-          "TailwindCSS",
-          "DiscordJS",
-          "NodeJS"
-        ]}
-      />
-      <PlaceWorked
-        link="https://igowithigho.org/"
-        date="July 2022 ─ October 2022"
-        position="Software Developer"
-        company="iGOwithIGHO"
-        description="We are passionate about international students, and our goal is to connect prospective international students to universities and colleges abroad."
-        technologies={[
-          "NextJS",
-          "Tailwindcss",
-          "Javascript",
-          "Sanity",
-          "Wordpress",
-        ]}
-      />
-    </section>
-  );
-};
 
 const PlaceWorked = ({
   link,
@@ -90,5 +43,24 @@ const PlaceWorked = ({
         </div>
       </div>
     </Link>
+  );
+};
+
+export const WorkSection = () => {
+  return (
+    <section className="flex flex-col justify-center align-middle sm:gap-6 gap-16" id="work">
+      <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Experience</div>
+      {placesWorkedData.map((place, index) => (
+        <PlaceWorked
+          key={"place" + index}
+          link={place.link}
+          date={place.date}
+          position={place.position}
+          company={place.company}
+          description={place.description}
+          technologies={place.technologies}
+        />
+      ))}
+    </section>
   );
 };

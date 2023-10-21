@@ -1,63 +1,22 @@
 import { ArrowUpRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import apple from "@/public/apple-store.png"
-import octave from "@/public/octave.png"
-import bot from "@/public/treasury-bot.png"
-import opencontent from "@/public/opencontent.png"
-import hackathon from "@/public/daobox-hackathon-ui.png"
-import tribe from "@/public/tribes.webp"
 
 export const ProjectsSection = () => {
   return (
-    <section
-      className="flex flex-col justify-center align-middle sm:gap-6 gap-16 mt-24"
-      id="projects"
-    >
+    <section className="flex flex-col justify-center align-middle sm:gap-6 gap-16 mt-24" id="projects">
       <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Projects</div>
-      <Projects
-        link="hhttps://apple-store-livid.vercel.app/"
-        image={apple}
-        title="Apple Store Clone"
-        description="A simple apple store landing page clone"
-        technologies={["Javascript", "NextJS", "Tailwindcss", "Vercel", "Framer Motion", "Sanity"]}
-      />
-      <Projects
-        link="https://octave-mu.vercel.app/"
-        image={octave}
-        title="Octave"
-        description="A simple social media platform"
-        technologies={["NextJs", "Tailwindcss", "Vercel", "Firebase", "Recoil"]}
-      />
-      <Projects
-        link="https://github.com/Spade-Social-Org/spade-treasury-discord-bot"
-        image={bot}
-        title="Crypto Wallet Tracking And Notification Bot"
-        description="This is a specialized crypto bot meticulously designed to monitor blockchain wallet address activity, providing timely notifications to users or designated Discord communities. Its purpose is to keep stakeholders informed of pertinent blockchain events without engaging in trading activities."
-        technologies={["NodeJS", "Moralis", "DiscordJS"]}
-      />
-      <Projects
-        link="https://opencontent-studio.vercel.app/"
-        image={opencontent}
-        title="OpenContent"
-        description="This is a decentralized content management system."
-        technologies={["NextJS", "Tailwindcss", "EtherJS", "Thegraph Protocol", "Filecoin", "Solidity", "Polygon"]}
-      />
-      <Projects
-        link="https://daoglobal-hackathon-7wqwnwzyx-dao-box.vercel.app/members"
-        image={hackathon}
-        title="Daobox Hackathon UI"
-        description="The user interface for daobox hackathon"
-        technologies={["NextJS", "Tailwindcss", "Lens Protocol", "Rainbowkit"]}
-        nolink={true}
-      />
-      <Projects
-        link="https://github.com/DAObox/tribeOs"
-        image={tribe}
-        title="TribeOS"
-        description="TribeOS is a Decentralized Autonomous Organization (DAO) building tool built on the aragon OSx"
-        technologies={["NextJS", "Tailwindcss", "Aragon", "Lens Protocol"]}
-      />
+      {projectsData.map((project, index) => (
+        <Projects
+          key={"project" + index}
+          link={project.link}
+          image={project.image}
+          title={project.title}
+          description={project.description}
+          technologies={project.technologies}
+          nolink={project.nolink}
+        />
+      ))}
     </section>
   );
 };
