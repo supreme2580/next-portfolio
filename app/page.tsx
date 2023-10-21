@@ -18,9 +18,9 @@ export default async function Home() {
 
       <main className="flex-auto min-w-0 flex flex-col px-2 sm:px-0">
         <HomeSection />
-        {/* <AboutSection />
+        <AboutSection />
         <WorkSection />
-        <ProjectsSection /> */}
+        {/* <ProjectsSection /> */}
       </main>
       {/* <Footer views={views} /> */}
     </div>

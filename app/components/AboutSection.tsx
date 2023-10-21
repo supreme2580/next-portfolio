@@ -12,9 +12,7 @@ export const AboutSection = () => {
     >
       <div className="pb-4 pt-8 sm:pt-4  text-3xl">About me!</div>
       <div className="text-justify text-lg tracking-tight mb-4">
-        I&apos;ve been into tech at a very young age but I only started enjoying
-        working on tech when I created my first CRUD app marking the beginning
-        of my exciting journey into software development.
+        Certainly, I am Victor Omorogbe, an ardent enthusiast of crafting digital entities that flourish within the dynamic landscape of the internet. My fascination with technology sprouted in my early years, partly inspired by my childhood experiences, such as watching Jimmy Neutron. This curiosity kindled my pursuit of a deeper understanding of Science and Technology, leading me to explore the realm of Software development. In 2019, during my final year in high school, I ventured into web and Android development. However, I later decided to exclusively focus on web development, as it offered a multitude of opportunities to explore and innovate. Today, I take immense pride in my role as a Software developer in the ever-evolving landscape of Web 3.0, driven by a commitment to continuous learning and innovation.
       </div>
       <div className="text-justify text-lg tracking-tight mb-4">
         I am mainly interested in developing{" "}
@@ -154,8 +152,8 @@ export const AboutSection = () => {
         from time to time.
       </div>
       <div className="text-justify text-lg tracking-tight mb-4">
-        When I&apos;m not infront of a screen, I enjoy cooking, baking and the
-        occasional workout. I also enjoy watching and playing Dota 2.
+        When I&apos;m not infront of a screen, I enjoy listening to music, watching movies and the
+        occasional workout. I also enjoy checking out memes.
       </div>
     </section>
   );

@@ -9,50 +9,41 @@ export const WorkSection = () => {
     >
       <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Experience</div>
       <PlaceWorked
-        link="https://theguidon.com/1112/main/"
-        date="2022 ─ PRESENT"
-        position="Digital Development Staffer"
-        company="The Guidon"
-        description="Create interactive elements for the publication's articles, enhancing the online reading experience."
-        technologies={["React", "Vite", "TailwindCSS"]}
+        link="https://www.daobox.app/"
+        date="2023 ─ PRESENT"
+        position="Frontend Developer"
+        company="Daobox"
+        description="We are a development studio working at the intersection of blockchain and artificial intelligence. Our objective is to ensure that DAOs are within the reach of all communities, fostering a governance framework that is transparent and inclusive for individuals and organizations alike."
+        technologies={["React", "NextJS", "TailwindCSS", "Typescript", "Wagmi", "Cypress"]}
       />
       <PlaceWorked
-        link="https://thinkingmachin.es/"
-        date="Jun 2023 ─ Aug 2023"
-        position="Software Engineering Intern"
-        company="Thinking Machines Data Science"
-        description="Developed an internal tool for the company. The tool allows users to create and manage projects, and to track the progress of each project."
+        link="https://www.bankless.community/"
+        date="2021 ─ PRESENT"
+        position="Software Developer"
+        company="Bankless Dao"
+        description="A decentralized autonomous organization that acts as a steward of the Bankless Movement progressing the world towards a future of greater freedom."
         technologies={[
           "React",
           "Typescript",
           "NextJS",
           "TailwindCSS",
-          "shadcn/ui",
-          "Prisma",
-          "Docker",
+          "DiscordJS",
+          "NodeJS"
         ]}
       />
       <PlaceWorked
-        link="https://embiggengroup.com/"
-        date="Apr 2022 ─ May 2023"
-        position="Web Development Intern"
-        company="Embiggen"
-        description="Developed an expert consultation platform for the company. The platform allows users to book consultations with experts in various fields."
+        link="https://igowithigho.org/"
+        date="July 2022 ─ October 2022"
+        position="Software Developer"
+        company="iGOwithIGHO"
+        description="We are passionate about international students, and our goal is to connect prospective international students to universities and colleges abroad."
         technologies={[
+          "NextJS",
+          "Tailwindcss",
           "Javascript",
-          "Embedded Javascript (EJS)",
-          "MongoDB",
-          "Node.js",
-          "ExpressJS",
+          "Sanity",
+          "Wordpress",
         ]}
-      />
-      <PlaceWorked
-        link="https://www.facebook.com/codingschoolph"
-        date="Dec 2021 ─ Jun 2022"
-        position="Coach"
-        company="The Coding School"
-        description="I taught kids aged 8-18 computer science concepts through Scratch. Additionally, I provided instruction in the field of game development."
-        technologies={["Unity", "C#"]}
       />
     </section>
   );
