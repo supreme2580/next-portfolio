@@ -1,11 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import coamaker from "@/public/coamaker.png";
-import blueballot from "@/public/blueballot.jpeg";
-import pitime from "@/public/pitime.jpeg";
-import southbound from "@/public/southbound.png";
-import spaceintern from "@/public/spaceintern.png";
 import Link from "next/link";
+import apple from "@/public/apple-store.png"
+import octave from "@/public/octave.png"
+import bot from "@/public/treasury-bot.png"
+import opencontent from "@/public/opencontent.png"
+import hackathon from "@/public/daobox-hackathon-ui.png"
+import tribe from "@/public/tribes.webp"
 
 export const ProjectsSection = () => {
   return (
@@ -15,40 +16,47 @@ export const ProjectsSection = () => {
     >
       <div className="pb-4 sm:pb-2 sm:pl-4 text-3xl mt-10">Projects</div>
       <Projects
-        link="https://coa-maker.vercel.app/"
-        image={coamaker}
-        title="COA Maker"
-        description="A simple tool to generate a Certificate of Authorship for all Computer Science related academic requirements."
-        technologies={["React", "Typescript", "NextJS", "Vercel"]}
+        link="hhttps://apple-store-livid.vercel.app/"
+        image={apple}
+        title="Apple Store Clone"
+        description="A simple apple store landing page clone"
+        technologies={["Javascript", "NextJS", "Tailwindcss", "Vercel", "Framer Motion", "Sanity"]}
       />
       <Projects
-        link="https://blueballot.theguidon.com/2023/"
-        image={blueballot}
-        title="Blue Ballot: 2023 SANGGUNIAN GENERAL ELECTIONS"
-        description="An interactive that allows users to explore the candidates for the 2022 Sanggunian General Elections."
-        technologies={["React", "Tailwind", "Vite"]}
+        link="https://octave-mu.vercel.app/"
+        image={octave}
+        title="Octave"
+        description="A simple social media platform"
+        technologies={["NextJs", "Tailwindcss", "Vercel", "Firebase", "Recoil"]}
       />
       <Projects
-        link="https://twitter.com/PiTimeBot_"
-        image={pitime}
-        title="PI Time Bot (Discontinued)"
-        description="A twitter bot that tweets every Pi Time (3:14 AM/PM)."
-        technologies={["Python", "Twitter API"]}
+        link="https://github.com/Spade-Social-Org/spade-treasury-discord-bot"
+        image={bot}
+        title="Crypto Wallet Tracking And Notification Bot"
+        description="This is a specialized crypto bot meticulously designed to monitor blockchain wallet address activity, providing timely notifications to users or designated Discord communities. Its purpose is to keep stakeholders informed of pertinent blockchain events without engaging in trading activities."
+        technologies={["NodeJS", "Moralis", "DiscordJS"]}
       />
       <Projects
-        link="https://2021.spaceappschallenge.org/challenges/statements/the-trail-to-mars-can-you-keep-your-crew-alive/teams/handaka-space-exploration/project"
-        image={spaceintern}
-        title="Space Intern: Interactive Story RPG"
-        description="Was a Finalist in the NASA Global Space Apps Challenge, with the team called HANDAKA SPACE EXPLORATION, representing the city of New York."
-        technologies={["Figma"]}
+        link="https://opencontent-studio.vercel.app/"
+        image={opencontent}
+        title="OpenContent"
+        description="This is a decentralized content management system."
+        technologies={["NextJS", "Tailwindcss", "EtherJS", "Thegraph Protocol", "Filecoin", "Solidity", "Polygon"]}
       />
       <Projects
-        link=""
-        image={southbound}
-        title="Southbound"
-        description="An endless runner/driver game loosely based on my experiences driving in EDSA."
-        technologies={["Unity", "C#"]}
+        link="https://daoglobal-hackathon-7wqwnwzyx-dao-box.vercel.app/members"
+        image={hackathon}
+        title="Daobox Hackathon UI"
+        description="The user interface for daobox hackathon"
+        technologies={["NextJS", "Tailwindcss", "Lens Protocol", "Rainbowkit"]}
         nolink={true}
+      />
+      <Projects
+        link="https://github.com/DAObox/tribeOs"
+        image={tribe}
+        title="TribeOS"
+        description="TribeOS is a Decentralized Autonomous Organization (DAO) building tool built on the aragon OSx"
+        technologies={["NextJS", "Tailwindcss", "Aragon", "Lens Protocol"]}
       />
     </section>
   );

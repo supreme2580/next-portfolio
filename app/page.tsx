@@ -1,5 +1,3 @@
-import { ReportView } from "./components/ReportView";
-import { Redis } from "@upstash/redis";
 import { HomeSection } from "./components/HomeSection";
 import { AboutSection } from "./components/AboutSection";
 import { WorkSection } from "./components/WorkSection";
@@ -20,9 +18,9 @@ export default async function Home() {
         <HomeSection />
         <AboutSection />
         <WorkSection />
-        {/* <ProjectsSection /> */}
+        <ProjectsSection />
       </main>
-      {/* <Footer views={views} /> */}
+      <Footer />
     </div>
   );
 }
