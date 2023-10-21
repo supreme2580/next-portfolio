@@ -8,21 +8,21 @@ import { Footer } from "./components/Footer";
 
 export const revalidate = 60;
 
-const redis = Redis.fromEnv();
+// const redis = Redis.fromEnv();
 
 export default async function Home() {
-  const views = (await redis.get<number>(["profileViews"].join(":"))) ?? 0;
+  // const views = (await redis.get<number>(["profileViews"].join(":"))) ?? 0;
   return (
     <div className="antialiased max-w-2xl mb-36 flex flex-col mx-8 md:mx-auto">
-      <ReportView />
+      {/* <ReportView /> */}
 
       <main className="flex-auto min-w-0 flex flex-col px-2 sm:px-0">
         <HomeSection />
-        <AboutSection />
+        {/* <AboutSection />
         <WorkSection />
-        <ProjectsSection />
+        <ProjectsSection /> */}
       </main>
-      <Footer views={views} />
+      {/* <Footer views={views} /> */}
     </div>
   );
 }

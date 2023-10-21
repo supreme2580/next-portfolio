@@ -4,8 +4,8 @@ import NavBar from "./components/NavBar";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Jose Luis Bautista",
-  description: "Jose Luis Bautista's Portfolio Website",
+  title: "Victor Omorogbe",
+  description: "Victor Omorogbe's Portfolio Website",
   icons: [
     {
       rel: "apple-touch-icon",
@@ -41,15 +41,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:url" content="https://www.luisbau.me/" />
-        <meta property="og:title" content="Jose Luis Bautista" />
+        <meta property="og:url" content="https://www.victoromorogbe.com/" />
+        <meta property="og:title" content="Victor Omorogbe" />
         <meta
           property="og:description"
-          content="Welcome to my portfolio! Discover a collection of my  web and game development projects."
+          content="Welcome to my portfolio! Discover a collection of my web2 and web3 development projects."
         />
-        <meta property="twitter:title" content="Jose Luis Bautista" />
+        <meta property="twitter:title" content="Victor Omorogbe" />
         <meta property="twitter:card" content="summary" />
-        <meta property="twitter:title" content="Jose Luis Bautista" />
+        <meta property="twitter:title" content="Victor Omorogbe" />
       </head>
       <body className="bg-background text-primary">
         {children}
