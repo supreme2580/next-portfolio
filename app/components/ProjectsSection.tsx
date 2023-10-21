@@ -1,3 +1,4 @@
+import { projectsData } from "@/constants/constants";
 import { ArrowUpRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";

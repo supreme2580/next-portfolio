@@ -14,7 +14,6 @@ export const HomeSection = () => {
         priority={true}
         src={profile}
         alt="profile"
-        placeholder="blur"
         width={200}
         height={200}
         className="self-center rounded-full relative h-72 w-60"
